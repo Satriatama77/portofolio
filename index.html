@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Digital Backend Developer - Berfokus pada pengembangan REST API, arsitektur basis data MySQL & PostgreSQL, serta bahasa pemrograman PHP & Python.">
+  <meta name="keywords" content="Backend Developer, PHP, Python, MySQL, PostgreSQL, REST API, Portfolio, Software Engineer">
+  <meta name="author" content="Backend Developer">
+  <title>Backend Developer | Portofolio Digital</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet Terpisah -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Ambient Glow -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header & Navbar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Dev</span>
+        <span class="logo-accent">.Backend</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Proyek</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline">Hire Me</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME / HERO -->
+    <section class="section hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Terbuka untuk Peluang Kerja (Backend Developer)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo, saya <span class="highlight-text">Backend Developer</span>
+          </h1>
+
+          <p class="hero-headline">
+            PHP, Python & Database Management
+          </p>
+
+          <p class="hero-tagline">
+            "Membangun fondasi logika aplikasi yang rapi, andal, dan terintegrasi dengan basis data."
+          </p>
+
+          <p class="hero-description">
+            Lulusan D3 Teknik Informatika yang berfokus pada rekayasa backend, perancangan REST API terstruktur, serta pengelolaan basis data relasional MySQL dan PostgreSQL.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 17l6-6-6-6M12 19h8"/>
+              </svg>
+              Lihat Proyek Saya
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Hubungi Saya
+            </a>
+          </div>
+
+          <div class="tech-stack-strip">
+            <span class="tech-strip-label">Core Stack:</span>
+            <div class="tech-strip-badges">
+              <span class="badge">PHP</span>
+              <span class="badge">Python</span>
+              <span class="badge">REST API</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Preview Component -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">backend-profile.json</span>
+              <span class="terminal-badge">JSON</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="code-punct">{</span>
+  <span class="code-key">"role"</span>: <span class="code-str">"Backend Developer"</span>,
+  <span class="code-key">"education"</span>: <span class="code-str">"D3 Teknik Informatika"</span>,
+  <span class="code-key">"primaryLanguages"</span>: [
+    <span class="code-str">"PHP"</span>,
+    <span class="code-str">"Python"</span>,
+    <span class="code-str">"JavaScript"</span>
+  ],
+  <span class="code-key">"databases"</span>: [
+    <span class="code-str">"MySQL"</span>,
+    <span class="code-str">"PostgreSQL"</span>
+  ],
+  <span class="code-key">"apiArchitecture"</span>: <span class="code-str">"RESTful API"</span>,
+  <span class="code-key">"versionControl"</span>: <span class="code-str">"Git"</span>,
+  <span class="code-key">"readyToWork"</span>: <span class="code-bool">true</span>
+<span class="code-punct">}</span></code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="server-status">
+                <span class="server-ping"></span> API Server Status: 200 OK
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profil</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <p class="section-subtitle">Latar belakang, fokus teknis, dan filosofi kerja dalam rekayasa backend</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card about-narrative">
+            <h3 class="about-card-title">Fokus & Pendekatan Kerja</h3>
+            <p>
+              Saya adalah lulusan <strong>D3 Teknik Informatika</strong> dengan fokus dan ketertarikan kuat pada arsitektur sistem backend. Selama masa studi dan pengerjaan berbagai proyek, saya terbiasa menangani alur pemrosesan data di balik layar—mulai dari penerimaan <em>request</em>, validasi logika bisnis, hingga penyimpanan dan penarikan data yang efisien.
+            </p>
+            <p>
+              Dalam pengembangan aplikasi, saya menggunakan <strong>PHP</strong> dan <strong>Python</strong> sebagai bahasa backend utama, didukung oleh pengelolaan basis data relasional seperti <strong>MySQL</strong> dan <strong>PostgreSQL</strong>. Saya telah mengimplementasikan solusi backend untuk berbagai kebutuhan nyata dan akademik, seperti sistem penanganan pengaduan dengan pemrosesan teks (NLP), platform pengelolaan nilai akademik siswa, hingga perancangan REST API terstruktur untuk integrasi sistem kampus.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">⚡</div>
+                <div>
+                  <h4>Logika Server & REST API</h4>
+                  <p>Membangun endpoint yang konsisten, terstruktur, dan siap dikonsumsi oleh aplikasi klien.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🗄️</div>
+                <div>
+                  <h4>Relational Database</h4>
+                  <p>Perancangan skema relasional, normalisasi tabel, dan optimasi query di MySQL & PostgreSQL.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🛡️</div>
+                <div>
+                  <h4>Integritas & Validasi Data</h4>
+                  <p>Memprioritaskan keamanan input, konsistensi data transaksi, dan penanganan error yang jelas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card about-meta">
+            <h3 class="about-card-title">Ringkasan Info</h3>
+            <ul class="meta-list">
+              <li class="meta-item">
+                <span class="meta-label">Target Role</span>
+                <span class="meta-value">Backend Developer / Software Engineer</span>
+              </li>
+              <li class="meta-item">
+                <span class="meta-label">Pendidikan</span>
+                <span class="meta-value">D3 Teknik Informatika</span>
+              </li>
+              <li class="meta-item">
+                <span class="meta-label">Spesialisasi</span>
+                <span class="meta-value">REST API & Relational Database</span>
+              </li>
+              <li class="meta-item">
+                <span class="meta-label">Bahasa Utama</span>
+                <span class="meta-value">PHP, Python, JavaScript</span>
+              </li>
+              <li class="meta-item">
+                <span class="meta-label">Database</span>
+                <span class="meta-value">MySQL, PostgreSQL</span>
+              </li>
+              <li class="meta-item">
+                <span class="meta-label">Status Ketersediaan</span>
+                <span class="meta-value badge-success">Siap Bekerja Segera</span>
+              </li>
+            </ul>
+
+            <div class="about-meta-cta">
+              <a href="#contact" class="btn btn-primary btn-block">Buka Kontak & Diskusi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2 class="section-title">Keahlian Teknis</h2>
+          <p class="section-subtitle">Daftar teknologi dan alat yang saya kuasai dan implementasikan dalam proyek nyata</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">Programming Languages</h3>
+            <p class="skill-desc">Bahasa pemrograman yang digunakan untuk merancang logika aplikasi dan server.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend Development -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">Backend</h3>
+            <p class="skill-desc">Pondasi pemrosesan server-side, validasi request, dan manipulasi data.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Database -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">Database</h3>
+            <p class="skill-desc">Perancangan basis data relasional, relasi tabel, dan konsistensi data transaksi.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Card 4: API -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">API Architecture</h3>
+            <p class="skill-desc">Penyusunan endpoint pertukaran data standar berformat JSON antar klien dan server.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Tools & DevOps -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="18" r="3"/>
+                <circle cx="6" cy="6" r="3"/>
+                <path d="M13 6h3a2 2 0 0 1 2 2v7"/>
+                <line x1="6" y1="9" x2="6" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">Tools & Version Control</h3>
+            <p class="skill-desc">Pelacakan versi kode program dan alur kerja kolaboratif menggunakan Git.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Frontend Basics -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="skill-category">Frontend Basics</h3>
+            <p class="skill-desc">Pemahaman struktur dasar web untuk memudahkan integrasi data ke sisi antarmuka pengguna.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio</span>
+          <h2 class="section-title">Proyek Yang Pernah Dikerjakan</h2>
+          <p class="section-subtitle">Bukti implementasi kemampuan backend dan database dalam studi kasus nyata</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 1 (PRIORITAS UTAMA) -->
+          <article class="project-card project-featured">
+            <div class="project-badge-wrap">
+              <span class="project-pill-featured">Proyek Utama</span>
+              <span class="project-role-badge">Role: Backend & Database</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Sistem Informasi Pengaduan Harga Material Bangunan di Lamongan</h3>
+                <p class="project-overview">
+                  Sistem berbasis web untuk memantau, memverifikasi, dan menangani pengaduan disparitas harga material bangunan di wilayah Lamongan. Dilengkapi modul pemrosesan teks (NLP) dan penyediaan data untuk pemetaan spasial.
+                </p>
+              </div>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <span class="detail-label">Masalah (Problem):</span>
+                  <p class="detail-text">
+                    Sulitnya memantau selisih harga material antarwilayah secara manual serta kebutuhan memproses dan memvalidasi laporan pengaduan dari masyarakat secara terpusat.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <span class="detail-label">Solusi (Solution):</span>
+                  <p class="detail-text">
+                    Membangun backend menggunakan Python dan database MySQL dengan modul pemrosesan data laporan, integrasi NLP, serta penyediaan data katalog harga dan peta disparitas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-features">
+                <h4 class="features-heading">Fitur-fitur Sistem:</h4>
+                <ul class="features-list">
+                  <li><span class="check-icon">✓</span> Sistem Autentikasi & Hak Akses Pengguna (Login)</li>
+                  <li><span class="check-icon">✓</span> Modul Pemrosesan Bahasa Alami (NLP) untuk analisis teks laporan</li>
+                  <li><span class="check-icon">✓</span> Verifikasi alur status laporan pengaduan</li>
+                  <li><span class="check-icon">✓</span> Manajemen data katalog harga material bangunan</li>
+                  <li><span class="check-icon">✓</span> Pencatatan pengaduan disparitas harga</li>
+                  <li><span class="check-icon">✓</span> Penyediaan data spasial untuk visualisasi peta disparitas</li>
+                </ul>
+              </div>
+
+              <div class="project-meta-bar">
+                <div class="meta-tech-group">
+                  <span class="tech-label">Teknologi:</span>
+                  <div class="tech-tags">
+                    <span class="badge badge-accent">Python</span>
+                    <span class="badge badge-accent">MySQL</span>
+                    <span class="badge">NLP</span>
+                    <span class="badge">React (Frontend)</span>
+                  </div>
+                </div>
+
+                <div class="meta-info-group">
+                  <div class="info-row">
+                    <span class="info-label">Hasil:</span>
+                    <span class="info-val">[Belum diisi]</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#contact" class="btn btn-sm btn-outline">
+                      <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                      </svg>
+                      Repository GitHub [Belum diisi]
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <div class="project-badge-wrap">
+              <span class="project-pill">Aplikasi Manajemen Akademik</span>
+              <span class="project-role-badge">Role: Backend & MySQL</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">E-Rapor Siswa</h3>
+                <p class="project-overview">
+                  Aplikasi web untuk pengelolaan nilai siswa, rekapitulasi nilai komponen mata pelajaran, serta penerbitan laporan hasil belajar secara terpusat.
+                </p>
+              </div>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <span class="detail-label">Masalah (Problem):</span>
+                  <p class="detail-text">
+                    Pencatatan nilai secara konvensional rawan kesalahan input, duplikasi data, dan memakan waktu lama saat rekapitulasi nilai akhir.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <span class="detail-label">Solusi (Solution):</span>
+                  <p class="detail-text">
+                    Membangun sistem backend berbasis PHP dan basis data MySQL untuk mengorganisasi data akademik siswa dan mengotomatisasi kalkulasi nilai akhir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-features">
+                <h4 class="features-heading">Fitur-fitur Sistem:</h4>
+                <ul class="features-list">
+                  <li><span class="check-icon">✓</span> Pengelolaan data siswa, kelas, dan mata pelajaran</li>
+                  <li><span class="check-icon">✓</span> Input dan pembaruan komponen nilai akademik secara terpusat</li>
+                  <li><span class="check-icon">✓</span> Logika kalkulasi otomatis nilai akhir rapor di sisi server</li>
+                  <li><span class="check-icon">✓</span> Penyimpanan riwayat data akademik siswa secara terstruktur</li>
+                </ul>
+              </div>
+
+              <div class="project-meta-bar">
+                <div class="meta-tech-group">
+                  <span class="tech-label">Teknologi:</span>
+                  <div class="tech-tags">
+                    <span class="badge badge-accent">PHP</span>
+                    <span class="badge badge-accent">MySQL</span>
+                    <span class="badge">HTML</span>
+                  </div>
+                </div>
+
+                <div class="meta-info-group">
+                  <div class="info-row">
+                    <span class="info-label">Hasil:</span>
+                    <span class="info-val">[Belum diisi]</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#contact" class="btn btn-sm btn-outline">
+                      <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                      </svg>
+                      Repository GitHub [Belum diisi]
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="project-badge-wrap">
+              <span class="project-pill">Layanan API & Database</span>
+              <span class="project-role-badge">Role: Backend Developer</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">CRUD Kampus (Layanan REST API & PostgreSQL)</h3>
+                <p class="project-overview">
+                  Sistem backend untuk menerima, menyimpan, dan menyediakan data entitas kampus melalui antarmuka REST API yang terintegrasi dengan database PostgreSQL.
+                </p>
+              </div>
+
+              <div class="project-details-grid">
+                <div class="detail-box">
+                  <span class="detail-label">Masalah (Problem):</span>
+                  <p class="detail-text">
+                    Kebutuhan backend terstruktur yang mampu melayani manipulasi data kampus secara konsisten serta terhubung andal dengan database PostgreSQL.
+                  </p>
+                </div>
+                <div class="detail-box">
+                  <span class="detail-label">Solusi (Solution):</span>
+                  <p class="detail-text">
+                    Merancang endpoint REST API menggunakan PHP dengan query terstruktur ke PostgreSQL untuk menangani seluruh operasi Create, Read, Update, Delete.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-features">
+                <h4 class="features-heading">Fitur-fitur Sistem:</h4>
+                <ul class="features-list">
+                  <li><span class="check-icon">✓</span> Endpoint API untuk operasi CRUD data entitas kampus</li>
+                  <li><span class="check-icon">✓</span> Integrasi langsung PHP dengan driver basis data PostgreSQL</li>
+                  <li><span class="check-icon">✓</span> Penanganan respon terstruktur untuk konsumsi aplikasi klien</li>
+                  <li><span class="check-icon">✓</span> Validasi dasar terhadap data masuk sebelum disimpan ke tabel</li>
+                </ul>
+              </div>
+
+              <div class="project-meta-bar">
+                <div class="meta-tech-group">
+                  <span class="tech-label">Teknologi:</span>
+                  <div class="tech-tags">
+                    <span class="badge badge-accent">PHP</span>
+                    <span class="badge badge-accent">PostgreSQL</span>
+                    <span class="badge">REST API</span>
+                  </div>
+                </div>
+
+                <div class="meta-info-group">
+                  <div class="info-row">
+                    <span class="info-label">Hasil:</span>
+                    <span class="info-val">[Belum diisi]</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#contact" class="btn btn-sm btn-outline">
+                      <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                      </svg>
+                      Repository GitHub [Belum diisi]
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Rekam Jejak</span>
+          <h2 class="section-title">Pengalaman Teknis</h2>
+          <p class="section-subtitle">Aktivitas pengembangan aplikasi dan sistem backend yang pernah dilakukan</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Backend Developer (Project-Based & Akademik)</h3>
+                <span class="timeline-period">[Belum diisi]</span>
+              </div>
+              <p class="timeline-desc">
+                Mengembangkan sistem dan layanan backend untuk kebutuhan akademik, tugas, serta studi kasus proyek nyata:
+              </p>
+              <ul class="timeline-bullets">
+                <li>Merancang arsitektur database relasional menggunakan <strong>MySQL</strong> dan <strong>PostgreSQL</strong> untuk memastikan integritas data.</li>
+                <li>Membangun logika bisnis di sisi server menggunakan bahasa <strong>PHP</strong> dan <strong>Python</strong>.</li>
+                <li>Menghubungkan layanan backend dengan sistem klien menggunakan pola arsitektur <strong>REST API</strong>.</li>
+                <li>Menggunakan <strong>Git</strong> untuk manajemen versi dan pelacakan perubahan kode secara terstruktur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: EDUCATION -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Akademik</span>
+          <h2 class="section-title">Pendidikan</h2>
+          <p class="section-subtitle">Latar belakang pendidikan formal dalam bidang teknologi informasi</p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <div class="edu-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">D3 Teknik Informatika</h3>
+                  <span class="edu-institution">[Nama Perguruan Tinggi / Politeknik - Belum diisi]</span>
+                </div>
+                <span class="edu-year">[Belum diisi]</span>
+              </div>
+              <p class="edu-description">
+                Mempelajari dasar-dasar ilmu komputer, algoritma pemrograman, rekayasa perangkat lunak, perancangan sistem informasi, serta manajemen basis data relasional.
+              </p>
+              <div class="edu-focus-pills">
+                <span class="edu-pill">Basis Data Relasional</span>
+                <span class="edu-pill">Pemrograman Web</span>
+                <span class="edu-pill">Algoritma & Struktur Data</span>
+                <span class="edu-pill">Rekayasa Perangkat Lunak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hubungi Saya</span>
+          <h2 class="section-title">Mari Berdiskusi</h2>
+          <p class="section-subtitle">Terbuka untuk peluang kerja sebagai Backend Developer, diskusi proyek, atau kolaborasi teknis</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Kolom Info Kontak -->
+          <div class="contact-info-panel">
+            <h3 class="panel-title">Informasi Kontak</h3>
+            <p class="panel-desc">
+              Silakan hubungi saya melalui jalur komunikasi berikut. Saya siap menjawab pertanyaan seputar pengalaman dan ketersediaan saya.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">Email</span>
+                  <span class="value">[email.anda@domain.com - Belum diisi]</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">LinkedIn</span>
+                  <span class="value">[linkedin.com/in/username - Belum diisi]</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">GitHub</span>
+                  <span class="value">[github.com/username - Belum diisi]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kontak -->
+          <div class="contact-form-panel">
+            <h3 class="panel-title">Kirim Pesan Singkat</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="contoh: recruiter@perusahaan.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subjek</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Peluang Kerja Backend Developer" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Tuliskan pesan atau detail peluang yang ingin didiskusikan..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                Kirim Pesan
+              </button>
+              
+              <div id="form-feedback" class="form-feedback hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Dev.Backend /&gt;</span>
+        <p class="footer-text">Portofolio Digital Backend Developer | D3 Teknik Informatika</p>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-copy">Dibuat dengan HTML, CSS, & JS murni. Tema Navy Blue & White.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Terpisah -->
+  <script src="script.js"></script>
+</body>
+</html>
